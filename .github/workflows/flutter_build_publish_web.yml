@@ -28,7 +28,7 @@ jobs:
         git config --global user.email denverflutter@gmail.com
         git config --global user.name denverflutter
         git status
-        git remote add origin https://${{secrets.commit_secret}}@github/flutter-denver/flutter-denver.github.io.git
+        git remote add origin https://${{secrets.commit_secret}}@github.com/flutter-denver/flutter-denver.github.io.git
         git checkout -b master
         git add --all
         git commit -m "update website"
