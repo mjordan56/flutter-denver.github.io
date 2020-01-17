@@ -4,6 +4,12 @@ class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(bottom: 2.5),
+      decoration: BoxDecoration(
+        border: Border(
+          bottom: BorderSide(width: 1, color: Colors.grey.shade600)
+        ),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
