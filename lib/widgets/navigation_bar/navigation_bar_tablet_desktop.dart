@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_denver/routing/route_names.dart';
 import 'package:flutter_denver/widgets/navigation_bar/navbar_item.dart';
 import 'package:flutter_denver/widgets/navigation_bar/navbar_logo.dart';
 
@@ -21,11 +22,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              NavBarItem('Events'),
+              NavBarItem('Events', EventsRoute),
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('About'),
+              NavBarItem('About', AboutRoute),
             ],
           )
         ],

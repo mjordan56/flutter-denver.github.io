@@ -30,6 +30,9 @@ dependencies:
   # Provides builder function with current sizing information.
   responsive_builder: ^0.1.4
 
+  # Service locator utility
+  get_it: ^3.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
