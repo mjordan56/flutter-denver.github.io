@@ -10,13 +10,17 @@ class NavigationBarMobile extends StatelessWidget {
       height: 80,
       child: Row(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
             onPressed: () {},
           ),
-          NavBarLogo()
+          Expanded(
+            child: Center(
+              child: NavBarLogo(),
+            ),
+          )
         ],
       ),
     );
